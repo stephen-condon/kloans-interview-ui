@@ -13,15 +13,18 @@ const routes: Array<RouteConfig> = [
   {
     path: '/result',
     name: 'Result',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "result" */ '../views/Result.vue')
+    component: () => import('../views/Result.vue')
   },
   {
     path: '/contact',
     name: 'Contact',
     component: () => import('../views/Contact.vue')
+  },
+  {
+    path: '/user/:id',
+    name: 'User',
+    component: () => import('../views/User.vue'),
+    props: route => ({ userId: route.params.id })
   }
 ]
 

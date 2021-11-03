@@ -34,7 +34,6 @@ export default class ContactForm extends Vue {
 
       this.setContact(this.contact);
     } catch (error) {
-      console.log(error)
       console.log('error');
     }
   }

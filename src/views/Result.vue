@@ -2,7 +2,7 @@
   <div>
     <h1>Submitted Contact Info</h1>
 
-    <div>
+    <div class="render-panel">
       {{ getContact.name }}: <a :href="'mailto:' + getContact.email">{{ getContact.email }}</a>
     </div>
   </div>
